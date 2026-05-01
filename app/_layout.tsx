@@ -5,7 +5,14 @@ export default function RootLayout() {
     <Stack.Screen name="index" options={{title: "Pokedex"}}  />
 
 
-    <Stack.Screen name="details" options={{title: "details"}}  />
-
+    <Stack.Screen name="details" 
+    options={{title: "details", 
+    headerBackButtonDisplayMode:"minimal",  
+    presentation:"formSheet",
+    sheetAllowedDetents:[0.3,0.5,0.7],
+    sheetGrabberVisible:true,
+    headerShown:false,
+    }}  />
+  
   </Stack>;
 }
